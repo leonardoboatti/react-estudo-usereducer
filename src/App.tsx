@@ -35,6 +35,10 @@ const App = () => {
       <button onClick={handleAddButton}>Adicionar</button>
 
       <hr/>
+
+
+      
+
       Lista de pessoas:
       <ul>
       {list.map((item, index) =>(
