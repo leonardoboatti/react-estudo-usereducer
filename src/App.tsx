@@ -29,6 +29,12 @@ const App = () => {
     })
   }
 
+  const handleOrderButton = () => {
+    dispatch({
+      type: 'ORDER'
+    });
+  }
+
   return (
     <div className='p-5'>
       <input className='border-2' type="text" value={nameInput} onChange={handleInputChange}/>
@@ -37,8 +43,8 @@ const App = () => {
       <hr/>
 
 
-      
-
+      <button onClick={handleOrderButton}>Ordenar</button>
+      <br/>
       Lista de pessoas:
       <ul>
       {list.map((item, index) =>(
